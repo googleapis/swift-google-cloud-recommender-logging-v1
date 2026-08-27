@@ -24,14 +24,14 @@ let package = Package(
     .library(name: "GoogleCloudRecommenderLoggingV1", targets: ["GoogleCloudRecommenderLoggingV1"])
   ],
   dependencies: [
-    .package(path: "../../generated/google-cloud-recommender-v1"),
+    .package(path: "../../generated/swift-google-cloud-recommender-v1"),
     .package(path: "../../packages/wkt"),
   ],
   targets: [
     .target(
       name: "GoogleCloudRecommenderLoggingV1",
       dependencies: [
-        .product(name: "GoogleCloudRecommenderV1", package: "google-cloud-recommender-v1"),
+        .product(name: "GoogleCloudRecommenderV1", package: "swift-google-cloud-recommender-v1"),
         .product(name: "GoogleCloudWKT", package: "wkt"),
       ],
     )
